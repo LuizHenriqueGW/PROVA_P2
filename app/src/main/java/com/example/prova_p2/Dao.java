@@ -9,4 +9,7 @@ public class Dao extends Pessoa_Info{
     public static void SalvarDao(Pessoa_Info elemento){
         dados.add(elemento);
     }
+    public static List<Pessoa_Info> getPessoa(){
+        return dados;
+    }
 }
