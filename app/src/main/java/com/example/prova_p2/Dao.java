@@ -1,22 +1,12 @@
 package com.example.prova_p2;
 
-public class Dao {
-    private String Nome;
-    private Integer Idade;
+import java.util.ArrayList;
+import java.util.List;
 
-    public String getNome() {
-        return Nome;
-    }
+public class Dao extends Pessoa_Info{
+    private static List<Pessoa_Info> dados = new ArrayList<>();
 
-    public void setNome(String nome) {
-        Nome = nome;
-    }
-
-    public Integer getIdade() {
-        return Idade;
-    }
-
-    public void setIdade(Integer idade) {
-        Idade = idade;
+    public static void SalvarDao(Pessoa_Info elemento){
+        dados.add(elemento);
     }
 }
